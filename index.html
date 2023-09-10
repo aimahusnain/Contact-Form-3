@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form #03</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style>
+    /* Static */
+    * {
+        background-color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .Static-Contact {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin: 20px;
+    }
+
+    .circle {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        width: 35px;
+        height: 35px;
+        background-color: #64B2D1;
+        border-radius: 50%;
+    }
+
+    .Icon-with-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: smaller;
+        width: 200px;
+    }
+
+    .Icon-with-text span {
+        font-weight: bolder;
+        color: black;
+    }
+
+    .Dynamic-Contact {
+        background-color: whitesmoke;
+        margin: 20px;
+        text-align: left;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Dynamic-Contact > .Content {
+        flex: 1;
+        padding: 20px;
+    }
+
+    img {
+        max-width: 90%;
+        height: auto;
+        border-radius: 10%;
+    }
+
+    .Button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #e16bff;
+        border: none;
+        border-radius: 30px;
+        color: #fff;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .Button:hover {
+        background-color: hsl(0, 100%, 66%);
+    }
+
+    .main {
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Fields {
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .NE {
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.178);
+    }
+
+    .Labelandinputspaceing {
+        margin-bottom: 10px;
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    .GAP{
+        margin-top: 25px;
+        margin-right: 25px;
+    }   
+
+    
+
+    @media screen and (max-width: 768px) {
+        .NE {
+            flex-direction: column;
+        }
+
+        .NE .Fields {
+            margin-bottom: 10;
+        }
+    }
+</style>
+
+<body>
+    <h1 class="Header">Contact Form #03</h1>
+    <div class="Static-Contact">
+        <div class="Icon-with-text">
+            <i class="fa fa-map-marker icon circle"></i>
+            <p><span>Address:</span> 92B, Street 1, Awami Villas 6, Phase 8, Bharia Town, Rawalpindi, Pakistan</p>
+        </div>
+
+        <div class="Icon-with-text">
+            <i class="fa fa-phone circle"></i>
+            <p><span>Phone:</span>+3074241757</p>
+        </div>
+
+        <div class="Icon-with-text">
+            <i class="fa fa-paper-plane circle"></i>
+            <p><span>Email:</span> aimahusnain@gmail.com</p>
+        </div>
+
+        <div class="Icon-with-text">
+            <i class="fa fa-globe circle"></i>
+            <p><span>Website:</span> canalstechnologies.com</p>
+        </div>
+    </div>
+
+    <div class="main">
+        <form action="#" method="post">
+            <div class="Dynamic-Contact">
+                <div class="Content">
+                    <h1>Contact Us</h1>
+                    <div class="NE">
+                        <div class="Fields GAP">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="Full Name" required>
+                        </div>
+
+                        <div class="Fields GAP">
+                            <label>Email Address</label>
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                    </div>
+
+                    <div class="Fields">
+                        <label>Subject</label>
+                        <input type="text" placeholder="Subject" required>
+                    </div>
+
+                    <div class="Fields Message">
+                        <label class="Labelandinputspaceing">Message</label>
+                        <textarea placeholder="Message" cols="40" rows="5"></textarea>
+                    </div>
+
+                    <button type="submit" class="Button">Send Message</button>
+                </div>
+            </div>
+        </form>
+        <div class="image"><img src="./assets/hsl_large_term-bg-1__1_.jpg" alt="Happy Avatar Image"></div>
+    </div>
+</body>
+
+</html>
